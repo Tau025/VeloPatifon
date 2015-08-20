@@ -15,32 +15,32 @@
         android:layout_marginBottom="10dp">
         <TextView
             android:text="0"
-            android:id="@+id/speed1"
+            android:id="@+id/tvSpeed1"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:background="@color/accent_material_light"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speed2"
+            android:id="@+id/tvSpeed2"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speed3"
+            android:id="@+id/tvSpeed3"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speed4"
+            android:id="@+id/tvSpeed4"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speed5"
+            android:id="@+id/tvSpeed5"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
@@ -59,32 +59,32 @@
         android:layout_marginBottom="10dp">
         <TextView
             android:text="0"
-            android:id="@+id/speedDiff1"
+            android:id="@+id/tvSpeedDiff1"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:background="@color/accent_material_light"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speedDiff2"
+            android:id="@+id/tvSpeedDiff2"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speedDiff3"
+            android:id="@+id/tvSpeedDiff3"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speedDiff4"
+            android:id="@+id/tvSpeedDiff4"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
         <TextView
             android:text="0"
-            android:id="@+id/speedDiff5"
+            android:id="@+id/tvSpeedDiff5"
             android:layout_width="76dp" android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp" />
@@ -92,8 +92,8 @@
 
 
     <TextView
-        android:text="Частота замеров"
-        android:id="@+id/tvStep"
+        android:text="Нужная скорость"
+        android:id="@+id/tvTargetSpeed"
         android:layout_width="188dp" android:layout_height="wrap_content"
         android:layout_row="4" android:layout_column="0"
         android:layout_margin="2dp" />
@@ -101,13 +101,13 @@
         android:layout_width="188dp" android:layout_height="60dp"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/etStep"
+        android:id="@+id/etTargetSpeed"
         android:layout_row="4" android:layout_column="1"
         android:layout_margin="2dp" />
 
     <TextView
-        android:text="Нужная скорость"
-        android:id="@+id/tvTargetSpeed"
+        android:text="Отклонение + / -"
+        android:id="@+id/tvDiffNormal"
         android:layout_width="188dp" android:layout_height="wrap_content"
         android:layout_row="5" android:layout_column="0"
         android:layout_margin="2dp" />
@@ -115,21 +115,20 @@
         android:layout_width="188dp" android:layout_height="60dp"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/etTargetSpeed"
+        android:id="@+id/etDiffNormal"
         android:layout_row="5" android:layout_column="1"
         android:layout_margin="2dp" />
 
-
     <Button
         android:text="Старт"
-        android:id="@+id/startTracking"
+        android:id="@+id/btnStartTracking"
         style="@style/ButtonBordered"
         android:layout_width="188dp" android:layout_height="60dp"
         android:layout_row="6" android:layout_column="0"
         android:onClick="onStartBTNClick" />
     <Button
         android:text="Стоп"
-        android:id="@+id/stopTracking"
+        android:id="@+id/btnStopTracking"
         style="@style/ButtonBordered"
         android:layout_width="188dp" android:layout_height="60dp"
         android:layout_row="6" android:layout_column="1"
@@ -137,7 +136,7 @@
     <Button
         style="@style/ButtonBordered"
         android:text="Плеер"
-        android:id="@+id/button"
+        android:id="@+id/btnPlayer"
         android:layout_width="188dp" android:layout_height="60dp"
         android:layout_row="7" android:layout_column="0"
         android:onClick="onPlayerBTNClick" />
