@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical">
 
     <TextView
         android:text="Скорость"
@@ -12,7 +12,8 @@
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/speedViews">
         <TextView
             android:text="0"
             android:id="@+id/tvSpeed1"
@@ -60,7 +61,8 @@
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/speedDiffViews">
         <TextView
             android:text="0"
             android:id="@+id/tvSpeedDiff1"
@@ -103,7 +105,8 @@
     <LinearLayout
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:id="@+id/targetSpeedAndDiffNormal">
         <TextView
             android:text="Нужная скорость"
             android:id="@+id/tvTargetSpeed"
@@ -140,28 +143,23 @@
     <LinearLayout
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:text="Старт"
-            android:id="@+id/btnStartTracking"
-            style="@style/ButtonBordered"
-            android:layout_width="124dp" android:layout_height="60dp"
-            android:onClick="onStartBTNClick"
-            android:layout_weight="1" />
-        <Button
-            style="@style/ButtonBordered"
-            android:text="Плеер"
-            android:id="@+id/btnPlayer"
-            android:layout_width="124dp" android:layout_height="60dp"
-            android:onClick="onPlayerBTNClick"
-            android:layout_weight="1" />
-        <Button
-            android:text="Стоп"
-            android:id="@+id/btnStopTracking"
-            style="@style/ButtonBordered"
-            android:layout_width="124dp" android:layout_height="60dp"
-            android:onClick="onStopBTNClick"
-            android:enabled="false"
-            android:layout_weight="1" />
+        <ToggleButton
+            android:textOff="Запустить\nGPS монитор"
+            android:textOn="Выключить\nGPS монитор"
+            android:id="@+id/tbtnTracking"
+            style="@style/ToggleButtonBordered"
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:onClick="onTrackingTBTNClick"
+            android:layout_gravity="center_vertical"/>
+
+        <ToggleButton
+            android:textOff="Запустить\nплеер"
+            android:textOn="Выключить\nплеер"
+            android:id="@+id/tbtnPlayer"
+            style="@style/ToggleButtonBordered"
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:onClick="onPlayerTBTNClick"
+            android:layout_gravity="center_vertical"/>
 
     </LinearLayout>
 
@@ -176,30 +174,30 @@
         <Button
             android:id="@+id/rate090"
             style="@style/ButtonBordered"
-            android:layout_width="wrap_content" android:layout_height="60dp"
-            android:text="0.9"
-            android:layout_weight="1"
-            android:onClick="onRate090BTNClick"/>
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:text="0.5"
+            android:enabled="false"
+            android:onClick="onRate050BTNClick"/>
         <Button
             android:id="@+id/rate100"
             style="@style/ButtonBordered"
-            android:layout_width="wrap_content" android:layout_height="60dp"
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
             android:text="1.0"
-            android:layout_weight="1"
+            android:enabled="false"
             android:onClick="onRate100BTNClick"/>
         <Button
             android:id="@+id/rate110"
             style="@style/ButtonBordered"
-            android:layout_width="wrap_content" android:layout_height="60dp"
-            android:text="1.1"
-            android:layout_weight="1"
-            android:onClick="onRate110BTNClick"/>
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:text="1.5"
+            android:enabled="false"
+            android:onClick="onRate150BTNClick"/>
         <Button
             android:id="@+id/rate200"
             style="@style/ButtonBordered"
-            android:layout_width="wrap_content" android:layout_height="60dp"
+            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
             android:text="2.0"
-            android:layout_weight="1"
+            android:enabled="false"
             android:onClick="onRate200BTNClick"/>
     </LinearLayout>
 </LinearLayout>
