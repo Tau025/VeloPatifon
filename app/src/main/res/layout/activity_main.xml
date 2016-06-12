@@ -1,52 +1,59 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent" android:layout_height="match_parent"
-              tools:context=".MainActivity"
-              android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="16sp">
 
     <TextView
         android:text="Скорость"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_margin="2dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:id="@+id/speedViews">
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeed1"
-            android:layout_width="76dp" android:layout_height="wrap_content"
-            android:background="@color/accent_material_light"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeed2"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeed3"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeed4"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeed5"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
@@ -55,47 +62,52 @@
 
     <TextView
         android:text="Быстрее / медленнее"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_margin="2dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:id="@+id/speedDiffViews">
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeedDiff1"
-            android:layout_width="76dp" android:layout_height="wrap_content"
-            android:background="@color/accent_material_light"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeedDiff2"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeedDiff3"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeedDiff4"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
         <TextView
-            android:text="0"
+            android:text="___"
             android:id="@+id/tvSpeedDiff5"
-            android:layout_width="76dp" android:layout_height="wrap_content"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
             android:gravity="right"
             android:paddingRight="2dp"
             android:layout_weight="1" />
@@ -103,101 +115,104 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="10dp"
         android:id="@+id/targetSpeedAndDiffNormal">
         <TextView
             android:text="Нужная скорость"
             android:id="@+id/tvTargetSpeed"
-            android:layout_width="92dp" android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
+            android:gravity="center_vertical|right"
             android:layout_gravity="center_vertical"/>
         <EditText
-            android:layout_width="92dp" android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:inputType="number"
-            android:ems="10"
             android:id="@+id/etTargetSpeed"
-            android:layout_margin="2dp"
-            android:layout_weight="1" />
+            android:gravity="center_vertical|right" />
         <TextView
             android:text="Порог\n+ / -"
             android:id="@+id/tvDiffNormal"
-            android:layout_width="92dp" android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
             android:layout_weight="1"
+            android:gravity="center_vertical|right"
             android:layout_gravity="center_vertical"/>
         <EditText
-            android:layout_width="92dp" android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:inputType="number"
-            android:ems="10"
             android:id="@+id/etDiffNormal"
-            android:layout_margin="2dp"
-            android:layout_weight="1" />
+            android:gravity="center_vertical|right" />
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ToggleButton
             android:textOff="Запустить\nGPS монитор"
             android:textOn="Выключить\nGPS монитор"
-            android:id="@+id/tbtnTracking"
-            style="@style/ToggleButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
-            android:onClick="onTrackingTBTNClick"
+            android:id="@+id/btnTracking"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"/>
 
         <ToggleButton
             android:textOff="Запустить\nплеер"
             android:textOn="Выключить\nплеер"
-            android:id="@+id/tbtnPlayer"
-            style="@style/ToggleButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
-            android:onClick="onPlayerTBTNClick"
+            android:id="@+id/btnPlayer"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:layout_gravity="center_vertical"/>
 
     </LinearLayout>
 
     <TextView
         android:text="Скорость воспроизведения"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_margin="2dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/rateButtons">
         <Button
-            android:id="@+id/rate090"
-            style="@style/ButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:id="@+id/rate050"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="0.5"
-            android:enabled="false"
-            android:onClick="onRate050BTNClick"/>
+            android:enabled="false"/>
         <Button
             android:id="@+id/rate100"
-            style="@style/ButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="1.0"
-            android:enabled="false"
-            android:onClick="onRate100BTNClick"/>
+            android:enabled="false"/>
         <Button
-            android:id="@+id/rate110"
-            style="@style/ButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:id="@+id/rate150"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="1.5"
-            android:enabled="false"
-            android:onClick="onRate150BTNClick"/>
+            android:enabled="false"/>
         <Button
             android:id="@+id/rate200"
-            style="@style/ButtonBordered"
-            android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
             android:text="2.0"
-            android:enabled="false"
-            android:onClick="onRate200BTNClick"/>
+            android:enabled="false"/>
     </LinearLayout>
 </LinearLayout>
